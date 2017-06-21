@@ -65,7 +65,7 @@ Try running the test, just to confirm it fails:
 
 [source, bash]
 ----
-$ /grailsw test-app demo.ValueEstimateServiceSpec
+$ ./grailsw test-app demo.ValueEstimateServiceSpec
 
 ...
 > There were failing tests. See the report at: file:///Users/dev/projects/creating-your-first-grails-app/complete/build/reports/tests/test/index.html
@@ -81,7 +81,7 @@ Now that we've confirmed our test is failing, let's edit this test case to exerc
 [source,groovy]
 .src/test/groovy/demo/ValueEstimateServiceSpec.groovy
 ----
-include::{sourceDir}/src/test/groovy/demo/ValueEstimateServiceSpec.groovy[]
+include::complete/src/test/demo/ValueEstimateServiceSpec.groovy[]
 ----
 <1> We're using the https://docs.grails.org/latest/api/grails/test/mixin/Mock.html[`Mock`] annotation (provided by Grails) to mock our domain classes, as GORM is not set up by default in a unit test.
 
